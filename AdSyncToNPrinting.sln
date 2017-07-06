@@ -1,0 +1,39 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADSyncCSharp", "src\ADSyncCSharp\ADSyncCSharp.csproj", "{4775D176-65A6-4B04-9953-648BF1A41B1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADSyncDemoApp", "src\ADSyncDemoApp\ADSyncDemoApp.csproj", "{2CBE5540-A25F-4A70-BB19-0F8E76FF75E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPrintingRestClient", "src\NPrintingRestClient\NPrintingRestClient.csproj", "{CFBBFDD8-FEF6-445A-8C2E-80B711F58E51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPrintingRestClientTest", "src\NPrintingRestClientTest\NPrintingRestClientTest.csproj", "{F799F622-6221-4DBB-AAA7-CDC577BDBCF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4775D176-65A6-4B04-9953-648BF1A41B1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4775D176-65A6-4B04-9953-648BF1A41B1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4775D176-65A6-4B04-9953-648BF1A41B1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4775D176-65A6-4B04-9953-648BF1A41B1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CBE5540-A25F-4A70-BB19-0F8E76FF75E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CBE5540-A25F-4A70-BB19-0F8E76FF75E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CBE5540-A25F-4A70-BB19-0F8E76FF75E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CBE5540-A25F-4A70-BB19-0F8E76FF75E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFBBFDD8-FEF6-445A-8C2E-80B711F58E51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFBBFDD8-FEF6-445A-8C2E-80B711F58E51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFBBFDD8-FEF6-445A-8C2E-80B711F58E51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFBBFDD8-FEF6-445A-8C2E-80B711F58E51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F799F622-6221-4DBB-AAA7-CDC577BDBCF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F799F622-6221-4DBB-AAA7-CDC577BDBCF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F799F622-6221-4DBB-AAA7-CDC577BDBCF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F799F622-6221-4DBB-AAA7-CDC577BDBCF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

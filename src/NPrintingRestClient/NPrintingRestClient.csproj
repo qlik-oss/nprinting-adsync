@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Qlik NPrinting API
+
+You can extend your reporting system by using the Qlik NPrinting API. This API provides endpoints to perform operations on apps, On-Demand requests and results, reports, filters, and so on.  For all requests, the data returned is filtered based on user permissions. That is, if a user is not authorized to access a certain object, that object is not returned in the reponse.  API Stability: Experimental.  Deprecation period: None. Can change at any point and should be used only to evaluate upcoming functionality.     
+
+OpenAPI spec version: 0.2.0
+
+-->
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CFBBFDD8-FEF6-445A-8C2E-80B711F58E51}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Qlik.NPrinting.Rest.Client</RootNamespace>
+    <AssemblyName>Qlik.NPrinting.Rest.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath Condition="Exists('$(SolutionDir)\packages')">$(SolutionDir)\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath Condition="Exists('..\packages')">..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath Condition="Exists('..\..\packages')">..\..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath Condition="Exists('..\..\vendor')">..\..\vendor\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath Condition="Exists('$(SolutionDir)\packages')">$(SolutionDir)\packages\RestSharp.105.1.0\lib\net45\RestSharp.dll</HintPath>
+      <HintPath Condition="Exists('..\packages')">..\packages\RestSharp.105.1.0\lib\net45\RestSharp.dll</HintPath>
+      <HintPath Condition="Exists('..\..\packages')">..\..\packages\RestSharp.105.1.0\lib\net45\RestSharp.dll</HintPath>
+      <HintPath Condition="Exists('..\..\vendor')">..\..\vendor\RestSharp.105.1.0\lib\net45\RestSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Api\AppsApi.cs" />
+    <Compile Include="Api\AuthenticationApi.cs" />
+    <Compile Include="Api\FiltersApi.cs" />
+    <Compile Include="Api\GroupsApi.cs" />
+    <Compile Include="Api\ReportsApi.cs" />
+    <Compile Include="Api\RolesApi.cs" />
+    <Compile Include="Api\UsersApi.cs" />
+    <Compile Include="Client\ApiClient.cs" />
+    <Compile Include="Client\ApiException.cs" />
+    <Compile Include="Client\ApiResponse.cs" />
+    <Compile Include="Client\ExceptionFactory.cs" />
+    <Compile Include="Client\IApiAccessor.cs" />
+    <Compile Include="Client\NPrintingApiFactory.cs" />
+    <Compile Include="Model\AppResponse.cs" />
+    <Compile Include="Model\GroupResponseEntry.cs" />
+    <Compile Include="Model\UserLocale.cs" />
+    <Compile Include="Model\UserResponseEntry.cs" />
+    <Compile Include="Model\UserUpdateRequest.cs" />
+    <Compile Include="Model\FilterRequest.cs" />
+    <Compile Include="Model\GenericIdList.cs" />
+    <Compile Include="Model\GenericIdListDataResponse.cs" />
+    <Compile Include="Model\GroupUpdateRequest.cs" />
+    <Compile Include="Model\AuthenticationResponse.cs" />
+    <Compile Include="Model\AppListResponse.cs" />
+    <Compile Include="Model\UserListResponse.cs" />
+    <Compile Include="Model\UserResponseData.cs" />
+    <Compile Include="Model\UserResponseDataItem.cs" />
+    <Compile Include="Model\GroupResponse.cs" />
+    <Compile Include="Model\GroupResponseData.cs" />
+    <Compile Include="Model\GroupResponseDataItem.cs" />
+    <Compile Include="Model\RoleListResponse.cs" />
+    <Compile Include="Model\RoleListResponseData.cs" />
+    <Compile Include="Model\RoleResponseDataItem.cs" />
+    <Compile Include="Model\RoleResponseData.cs" />
+    <Compile Include="Model\AppListResponseData.cs" />
+    <Compile Include="Model\AppResponseDataItem.cs" />
+    <Compile Include="Model\ReportListResponse.cs" />
+    <Compile Include="Model\ReportListResponseData.cs" />
+    <Compile Include="Model\ReportResponseDataItem.cs" />
+    <Compile Include="Model\ReportResponse.cs" />
+    <Compile Include="Model\FilterListResponse.cs" />
+    <Compile Include="Model\FilterListResponseData.cs" />
+    <Compile Include="Model\FilterField.cs" />
+    <Compile Include="Model\FilterResponseDataItems.cs" />
+    <Compile Include="Model\FilterFieldValue.cs" />
+    <Compile Include="Model\FilterResponse.cs" />
+    <Compile Include="Model\AuthenticationRequest.cs" />
+    <Compile Include="Model\GroupRequest.cs" />
+    <Compile Include="Model\UserRequest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
