@@ -24,7 +24,7 @@ if not exist ".\nuget.exe" powershell -Command "(new-object System.Net.WebClient
 set LOG=build.log
 if exist %LOG% del %LOG%
 
-call %MSBUILD%  src\ADSyncDemoApp\ADSyncDemoApp.csproj /m /verbosity:normal /toolsversion:14.0 /p:Configuration=%CONFIG%;Platform=%PLATFORM%;OutputPath=%OUTPUT% /t:rebuild
+call %MSBUILD%  src\ADSyncDemoApp\ADSyncDemoApp.csproj /m /verbosity:normal /p:Configuration=%CONFIG%;Platform=%PLATFORM%;OutputPath=%OUTPUT% /t:rebuild
 
 goto end
 
